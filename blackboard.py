@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 import urllib.request
 import requests
 
-driver = webdriver.Chrome(executable_path='C:/Windows/chromedriver.exe') # Add chromedriver.exe to your path
+driver = webdriver.Chrome(executable_path='C:/Windows/msedgedriver.exe') 
 
-options = Options() # Adds additional options such as cookies
+options = EdgeOptions() # Adds additional options such as cookies
 options.add_argument("user-data-dir=selenium") # Logs selenium output
 
 driver = webdriver.Chrome(options=options)
